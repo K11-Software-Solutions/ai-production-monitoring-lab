@@ -96,6 +96,24 @@ articles/          the eight articles
 - **Global changes confound triage.** The new model version "explained" every alert until it was separated out.
 - **Overlap-based evaluators miss changed numbers.** A refund window of 60 days instead of 30 passes the groundedness check.
 
+## Related K11 tools
+
+This lab watches **real traffic after release**. Two K11 tools test with **synthetic inputs before and alongside release**, and together they cover most of an AI system's lifecycle:
+
+```text
+ PR / config change ──► pre-release security ──► release ──► production ──► incident ──► regression case
+ llm-eval-agent-app     llm-assurance-toolkit    this lab:   this lab:     this lab:     feeds back into
+ (bias & robustness     (OWASP LLM Top 10        shadow test traces,       triage        the test sets
+  gate on every PR)      red-teaming, CI gate)               drift, alerts
+```
+
+| Tool | What it does | How it relates to this lab |
+|---|---|---|
+| [llm-eval-agent-app](https://github.com/K11-Software-Solutions/llm-eval-agent-app) | GitHub App that runs bias and robustness evaluations on every pull request, posts scorecards as Check Runs and blocks merges below threshold; also runs scheduled evals and tracks trends | The PR-time counterpart of this lab's release gate (article 06). Its scheduled evals are *synthetic monitoring*: a fixed probe set that catches regressions even when live traffic is low |
+| [k11techlab-llm-assurance-toolkit](https://github.com/K11-Software-Solutions/k11techlab-llm-assurance-toolkit) | Red-teaming with 41 probes mapped to the OWASP Top 10 for LLM Applications, deterministic leak/PII/refusal detectors, an optional LLM judge, a CI gate and an MCP server | The attack side of this lab's guardrails and injection-campaign incident (article 05). Run it before release; this lab measures how guardrails perform on real traffic afterwards |
+
+Failures found in production here make good new cases for both tools, and their findings make good regression cases here.
+
 ## Limitations
 
 Simulated traffic (no seasonality, bots or correlated outages), a fixed baseline, daily windows, simple evaluators and no alert grouping. See [article 08](articles/08-testing-the-monitoring-system.md#6-limitations).

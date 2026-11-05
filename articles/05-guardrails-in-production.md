@@ -41,5 +41,19 @@ Guardrail outputs are monitored like any other metric:
 
 Redaction happens at trace time (article 02) and is **checked again** before any trace becomes a regression case (article 07). Defence in depth applies to privacy controls too: the export step refuses any case in which PII is still detectable.
 
+## 6. Red-team before release, monitor after
+
+This article measures guardrails on **real traffic**. Before release, attack them deliberately. The [K11 LLM Assurance Toolkit](https://github.com/K11-Software-Solutions/k11techlab-llm-assurance-toolkit) runs 41 probes mapped to the OWASP Top 10 for LLM Applications (prompt injection, system-prompt leakage, sensitive-information disclosure, jailbreaks and more). It includes deterministic detectors that catch, for example, a system-prompt canary leaked reversed, spaced out or base64-encoded.
+
+The two activities answer different questions:
+
+| | Red-teaming before release | Monitoring after release |
+|---|---|---|
+| Inputs | crafted attacks | whatever real users send |
+| Question | *can* the guardrails be bypassed? | *how often* do they miss or over-block in practice? |
+| Output | findings to fix before launch | flag rates, error rates, incidents |
+
+Use both, and feed each into the other: a confirmed bypass from red-teaming becomes a labelled case in `guardrail_labels.jsonl`, and a new attack pattern seen in production (like the day-12 campaign) becomes a new red-team probe.
+
 ---
 Next: [06. Shadow Testing and Release Decisions](06-shadow-testing-and-release-decisions.md)

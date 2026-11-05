@@ -53,5 +53,18 @@ The fix: count only **over-refusals**, refusals when the context *did* contain t
 - **Privacy:** shadow traffic is real user data; use the redacted queries.
 - **Cost:** shadowing doubles inference cost for the period; sample if needed.
 
+## 5. Gates earlier in the pipeline
+
+Shadow testing is the last gate before users see a change. Earlier gates are cheaper. The [K11 LLM Eval Agent](https://github.com/K11-Software-Solutions/llm-eval-agent-app) is a GitHub App that runs bias and robustness evaluations on every pull request that touches model or prompt configuration, posts a scorecard as a Check Run, and blocks the merge when a threshold is missed.
+
+A sensible order of gates, from cheapest to most realistic:
+
+1. **Pull request:** offline evals and bias/robustness checks on a fixed dataset (eval agent; labs 1–3 of this series).
+2. **Pre-release:** security red-teaming ([LLM Assurance Toolkit](https://github.com/K11-Software-Solutions/k11techlab-llm-assurance-toolkit)).
+3. **Release:** shadow testing on real traffic (this article).
+4. **Production:** monitoring, with scheduled synthetic evals as a safety net when traffic is low.
+
+The decision-rule lesson from section 3 applies at every stage: before a gate blocks on a metric, ask whether its "bad" direction could ever be the correct behaviour.
+
 ---
 Next: [07. From Alert to Regression Test](07-from-alert-to-regression-test.md)
