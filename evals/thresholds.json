@@ -1,0 +1,17 @@
+{
+  "_comment": "Gates on the monitoring system itself. Every injected incident must be caught within a day, a quiet period must raise no alerts, and privacy controls must not leak.",
+  "incident_recall": {"min": 1.0},
+  "max_detection_delay_days": {"max": 1},
+  "unexplained_alerts": {"max": 0},
+  "quiet_period_alerts": {"max": 0},
+  "pii_recall": {"min": 1.0},
+  "pii_precision": {"min": 0.9},
+  "injection_recall": {"min": 0.7},
+  "injection_precision": {"min": 0.9},
+  "evaluator_precision": {"min": 0.9},
+  "evaluator_recall": {"min": 0.9},
+  "triage_accuracy": {"min": 1.0},
+  "regression_cases_exported": {"min": 10},
+  "regression_case_pii_leaks": {"max": 0},
+  "release_decision_accuracy": {"min": 1.0}
+}
