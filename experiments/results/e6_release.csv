@@ -1,0 +1,151 @@
+seed,candidate,promote,expected,reasons
+1000,model-b-good,True,True,
+1000,model-b-bad,False,False,groundedness failures up: 0.142 vs 0.036 (z=10.6)
+1000,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.036 (z=7.1); cost up: 0.000259 vs 0.000211
+1001,model-b-good,True,True,
+1001,model-b-bad,False,False,groundedness failures up: 0.141 vs 0.034 (z=10.7)
+1001,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.034 (z=7.2); p95 latency up: 1189.3 vs 988.4; cost up: 0.000258 vs 0.000211
+1002,model-b-good,True,True,
+1002,model-b-bad,False,False,groundedness failures up: 0.152 vs 0.037 (z=11.0)
+1002,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.037 (z=6.8); p95 latency up: 1189.7 vs 991.4; cost up: 0.000258 vs 0.000211
+1003,model-b-good,True,True,
+1003,model-b-bad,False,False,groundedness failures up: 0.143 vs 0.038 (z=10.3)
+1003,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.038 (z=6.3); cost up: 0.000258 vs 0.000211
+1004,model-b-good,True,True,
+1004,model-b-bad,False,False,groundedness failures up: 0.137 vs 0.029 (z=11.1)
+1004,model-a-2026-11,False,False,groundedness failures up: 0.092 vs 0.029 (z=7.5); cost up: 0.000259 vs 0.000211
+1005,model-b-good,True,True,
+1005,model-b-bad,False,False,groundedness failures up: 0.138 vs 0.031 (z=10.9)
+1005,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.031 (z=7.4); cost up: 0.000259 vs 0.000211
+1006,model-b-good,True,True,
+1006,model-b-bad,False,False,groundedness failures up: 0.142 vs 0.030 (z=11.3)
+1006,model-a-2026-11,False,False,groundedness failures up: 0.093 vs 0.030 (z=7.4); p95 latency up: 1191.3 vs 989.1; cost up: 0.000259 vs 0.000211
+1007,model-b-good,True,True,
+1007,model-b-bad,False,False,groundedness failures up: 0.143 vs 0.027 (z=11.8)
+1007,model-a-2026-11,False,False,groundedness failures up: 0.096 vs 0.027 (z=8.1); cost up: 0.000258 vs 0.000211
+1008,model-b-good,True,True,
+1008,model-b-bad,False,False,groundedness failures up: 0.142 vs 0.041 (z=9.9)
+1008,model-a-2026-11,False,False,groundedness failures up: 0.103 vs 0.041 (z=6.8); cost up: 0.000258 vs 0.000211
+1009,model-b-good,True,True,
+1009,model-b-bad,False,False,groundedness failures up: 0.138 vs 0.033 (z=10.6)
+1009,model-a-2026-11,False,False,groundedness failures up: 0.089 vs 0.033 (z=6.6); p95 latency up: 1184.9 vs 986.6; cost up: 0.000259 vs 0.000211
+1010,model-b-good,True,True,
+1010,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.038 (z=10.7)
+1010,model-a-2026-11,False,False,groundedness failures up: 0.101 vs 0.038 (z=7.0); cost up: 0.000258 vs 0.000211
+1011,model-b-good,True,True,
+1011,model-b-bad,False,False,groundedness failures up: 0.156 vs 0.041 (z=10.9)
+1011,model-a-2026-11,False,False,groundedness failures up: 0.106 vs 0.041 (z=7.0); cost up: 0.000258 vs 0.000211
+1012,model-b-good,True,True,
+1012,model-b-bad,False,False,groundedness failures up: 0.133 vs 0.036 (z=9.9)
+1012,model-a-2026-11,False,False,groundedness failures up: 0.092 vs 0.036 (z=6.6); cost up: 0.000259 vs 0.000211
+1013,model-b-good,True,True,
+1013,model-b-bad,False,False,groundedness failures up: 0.149 vs 0.035 (z=11.1)
+1013,model-a-2026-11,False,False,groundedness failures up: 0.102 vs 0.035 (z=7.5); cost up: 0.000258 vs 0.000211
+1014,model-b-good,True,True,
+1014,model-b-bad,False,False,groundedness failures up: 0.139 vs 0.035 (z=10.4)
+1014,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.035 (z=6.8); p95 latency up: 1181.9 vs 983.9; cost up: 0.000259 vs 0.000211
+1015,model-b-good,True,True,
+1015,model-b-bad,False,False,groundedness failures up: 0.152 vs 0.041 (z=10.6)
+1015,model-a-2026-11,False,False,groundedness failures up: 0.105 vs 0.041 (z=6.9); cost up: 0.000258 vs 0.000211
+1016,model-b-good,True,True,
+1016,model-b-bad,False,False,groundedness failures up: 0.139 vs 0.029 (z=11.2)
+1016,model-a-2026-11,False,False,groundedness failures up: 0.091 vs 0.029 (z=7.4); cost up: 0.000259 vs 0.000211
+1017,model-b-good,True,True,
+1017,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.034 (z=10.9)
+1017,model-a-2026-11,False,False,groundedness failures up: 0.096 vs 0.034 (z=7.2); cost up: 0.000259 vs 0.000211
+1018,model-b-good,True,True,
+1018,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.037 (z=10.8)
+1018,model-a-2026-11,False,False,groundedness failures up: 0.099 vs 0.037 (z=7.0); cost up: 0.000258 vs 0.000211
+1019,model-b-good,True,True,
+1019,model-b-bad,False,False,groundedness failures up: 0.138 vs 0.036 (z=10.3)
+1019,model-a-2026-11,False,False,groundedness failures up: 0.093 vs 0.036 (z=6.6); cost up: 0.000259 vs 0.000211
+1020,model-b-good,True,True,
+1020,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.035 (z=10.8)
+1020,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.035 (z=7.2); p95 latency up: 1184.4 vs 984.0; cost up: 0.000258 vs 0.000211
+1021,model-b-good,True,True,
+1021,model-b-bad,False,False,groundedness failures up: 0.139 vs 0.031 (z=10.9)
+1021,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.031 (z=7.3); p95 latency up: 1187.5 vs 987.3; cost up: 0.000259 vs 0.000211
+1022,model-b-good,True,True,
+1022,model-b-bad,False,False,groundedness failures up: 0.151 vs 0.039 (z=10.7)
+1022,model-a-2026-11,False,False,groundedness failures up: 0.100 vs 0.039 (z=6.7); p95 latency up: 1185.1 vs 986.6; cost up: 0.000257 vs 0.000211
+1023,model-b-good,True,True,
+1023,model-b-bad,False,False,groundedness failures up: 0.140 vs 0.032 (z=10.9)
+1023,model-a-2026-11,False,False,groundedness failures up: 0.089 vs 0.032 (z=6.8); p95 latency up: 1189.7 vs 985.2; cost up: 0.000258 vs 0.000211
+1024,model-b-good,True,True,
+1024,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.033 (z=11.0)
+1024,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.033 (z=7.1); p95 latency up: 1192.2 vs 987.3; cost up: 0.000259 vs 0.000211
+1025,model-b-good,True,True,
+1025,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.034 (z=10.9)
+1025,model-a-2026-11,False,False,groundedness failures up: 0.096 vs 0.034 (z=7.0); cost up: 0.000259 vs 0.000211
+1026,model-b-good,True,True,
+1026,model-b-bad,False,False,groundedness failures up: 0.153 vs 0.036 (z=11.4)
+1026,model-a-2026-11,False,False,groundedness failures up: 0.104 vs 0.036 (z=7.6); cost up: 0.000258 vs 0.000211
+1027,model-b-good,True,True,
+1027,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.038 (z=10.7)
+1027,model-a-2026-11,False,False,groundedness failures up: 0.101 vs 0.038 (z=7.0); cost up: 0.000258 vs 0.000211
+1028,model-b-good,True,True,
+1028,model-b-bad,False,False,groundedness failures up: 0.140 vs 0.031 (z=11.0)
+1028,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.031 (z=7.3); p95 latency up: 1186.3 vs 986.3; cost up: 0.000258 vs 0.000211
+1029,model-b-good,True,True,
+1029,model-b-bad,False,False,groundedness failures up: 0.139 vs 0.031 (z=11.0)
+1029,model-a-2026-11,False,False,groundedness failures up: 0.090 vs 0.031 (z=7.1); cost up: 0.000259 vs 0.000211
+1030,model-b-good,True,True,
+1030,model-b-bad,False,False,groundedness failures up: 0.148 vs 0.033 (z=11.4)
+1030,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.033 (z=7.5); cost up: 0.000258 vs 0.000211
+1031,model-b-good,True,True,
+1031,model-b-bad,False,False,groundedness failures up: 0.142 vs 0.034 (z=10.8)
+1031,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.034 (z=7.2); cost up: 0.000258 vs 0.000211
+1032,model-b-good,True,True,
+1032,model-b-bad,False,False,groundedness failures up: 0.141 vs 0.032 (z=11.0)
+1032,model-a-2026-11,False,False,groundedness failures up: 0.092 vs 0.032 (z=7.1); cost up: 0.000259 vs 0.000211
+1033,model-b-good,True,True,
+1033,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.036 (z=10.9)
+1033,model-a-2026-11,False,False,groundedness failures up: 0.102 vs 0.036 (z=7.3); p95 latency up: 1197.1 vs 990.9; cost up: 0.000258 vs 0.000211
+1034,model-b-good,True,True,
+1034,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.037 (z=10.8)
+1034,model-a-2026-11,False,False,groundedness failures up: 0.100 vs 0.037 (z=7.1); cost up: 0.000258 vs 0.000211
+1035,model-b-good,True,True,
+1035,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.034 (z=11.0)
+1035,model-a-2026-11,False,False,groundedness failures up: 0.096 vs 0.034 (z=7.2); cost up: 0.000259 vs 0.000211
+1036,model-b-good,True,True,
+1036,model-b-bad,False,False,groundedness failures up: 0.138 vs 0.036 (z=10.2)
+1036,model-a-2026-11,False,False,groundedness failures up: 0.093 vs 0.036 (z=6.6); cost up: 0.000259 vs 0.000211
+1037,model-b-good,True,True,
+1037,model-b-bad,False,False,groundedness failures up: 0.136 vs 0.037 (z=9.9)
+1037,model-a-2026-11,False,False,groundedness failures up: 0.095 vs 0.037 (z=6.6); p95 latency up: 1193.2 vs 991.3; cost up: 0.000259 vs 0.000211
+1038,model-b-good,True,True,
+1038,model-b-bad,False,False,groundedness failures up: 0.152 vs 0.036 (z=11.2)
+1038,model-a-2026-11,False,False,groundedness failures up: 0.099 vs 0.036 (z=7.0); cost up: 0.000258 vs 0.000211
+1039,model-b-good,True,True,
+1039,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.040 (z=10.4)
+1039,model-a-2026-11,False,False,groundedness failures up: 0.098 vs 0.040 (z=6.4); cost up: 0.000257 vs 0.000211
+1040,model-b-good,True,True,
+1040,model-b-bad,False,False,groundedness failures up: 0.146 vs 0.034 (z=11.1)
+1040,model-a-2026-11,False,False,groundedness failures up: 0.095 vs 0.034 (z=7.1); cost up: 0.000259 vs 0.000211
+1041,model-b-good,True,True,
+1041,model-b-bad,False,False,groundedness failures up: 0.136 vs 0.033 (z=10.5)
+1041,model-a-2026-11,False,False,groundedness failures up: 0.092 vs 0.033 (z=7.0); cost up: 0.000259 vs 0.000211
+1042,model-b-good,True,True,
+1042,model-b-bad,False,False,groundedness failures up: 0.147 vs 0.041 (z=10.3)
+1042,model-a-2026-11,False,False,groundedness failures up: 0.102 vs 0.041 (z=6.7); p95 latency up: 1185.2 vs 982.5; cost up: 0.000258 vs 0.000211
+1043,model-b-good,True,True,
+1043,model-b-bad,False,False,groundedness failures up: 0.145 vs 0.034 (z=11.0)
+1043,model-a-2026-11,False,False,groundedness failures up: 0.101 vs 0.034 (z=7.5); cost up: 0.000259 vs 0.000211
+1044,model-b-good,True,True,
+1044,model-b-bad,False,False,groundedness failures up: 0.148 vs 0.043 (z=10.1)
+1044,model-a-2026-11,False,False,groundedness failures up: 0.101 vs 0.043 (z=6.3); p95 latency up: 1192.1 vs 991.3; cost up: 0.000258 vs 0.000211
+1045,model-b-good,True,True,
+1045,model-b-bad,False,False,groundedness failures up: 0.141 vs 0.033 (z=10.9)
+1045,model-a-2026-11,False,False,groundedness failures up: 0.097 vs 0.033 (z=7.4); cost up: 0.000258 vs 0.000211
+1046,model-b-good,True,True,
+1046,model-b-bad,False,False,groundedness failures up: 0.144 vs 0.032 (z=11.2)
+1046,model-a-2026-11,False,False,groundedness failures up: 0.095 vs 0.032 (z=7.3); p95 latency up: 1190.3 vs 987.2; cost up: 0.000258 vs 0.000211
+1047,model-b-good,True,True,
+1047,model-b-bad,False,False,groundedness failures up: 0.145 vs 0.038 (z=10.5)
+1047,model-a-2026-11,False,False,groundedness failures up: 0.099 vs 0.038 (z=6.8); cost up: 0.000258 vs 0.000211
+1048,model-b-good,True,True,
+1048,model-b-bad,False,False,groundedness failures up: 0.141 vs 0.033 (z=10.9)
+1048,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.033 (z=7.2); p95 latency up: 1186.4 vs 985.6; cost up: 0.000259 vs 0.000211
+1049,model-b-good,True,True,
+1049,model-b-bad,False,False,groundedness failures up: 0.141 vs 0.033 (z=10.8)
+1049,model-a-2026-11,False,False,groundedness failures up: 0.094 vs 0.033 (z=7.1); cost up: 0.000258 vs 0.000211

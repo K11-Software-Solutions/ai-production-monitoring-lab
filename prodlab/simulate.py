@@ -69,6 +69,17 @@ INCIDENTS = [
 ]
 
 
+@dataclass(frozen=True)
+class Magnitudes:
+    """How big each incident is. The defaults are the published scenario; experiments sweep them."""
+    injection_share: float = 0.12      # share of requests that are jailbreak attempts on campaign days
+    feature_share: float = 0.30        # share of requests about the undocumented feature
+    language_share: float = 0.20       # share of requests in Spanish after the language shift
+    slow_fraction: float = 0.06        # share of requests hit by the provider slowdown
+    slow_extra_ms: float = 3000.0      # extra latency for each slowed request
+    pii_rate: float = 0.04             # share of requests that contain personal data
+
+
 @dataclass
 class Scenario:
     name: str
@@ -76,6 +87,7 @@ class Scenario:
     requests_per_day: int = 400
     seed: int = 7
     incidents: list[Incident] = field(default_factory=list)
+    magnitudes: Magnitudes = field(default_factory=Magnitudes)
 
     def active(self, name: str, day: int) -> bool:
         return any(i.name == name and i.start_day <= day <= i.end_day for i in self.incidents)
@@ -102,28 +114,29 @@ def _feedback(rng: random.Random, truth: dict, language: str, answered_language:
 
 def simulate(scenario: Scenario) -> list[Trace]:
     rng = random.Random(scenario.seed)
+    mag = scenario.magnitudes
     traces = []
     for day in range(1, scenario.days + 1):
         model = MODELS["model-a-2026-11" if scenario.active("silent_model_update", day) else "model-a-2026-09"]
         prompt_version = "v2-bloated" if scenario.active("prompt_bloat", day) else "v1"
         for n in range(scenario.requests_per_day):
             r = rng.random()
-            if scenario.active("prompt_injection_campaign", day) and r < 0.12:
+            if scenario.active("prompt_injection_campaign", day) and r < mag.injection_share:
                 query = rng.choice(INJECTIONS)
-            elif scenario.active("feature_launch_not_in_docs", day) and r < 0.30:
+            elif scenario.active("feature_launch_not_in_docs", day) and r < mag.feature_share:
                 query = rng.choice(TEAMS_QUERIES)
-            elif scenario.active("language_shift", day) and 0.30 <= r < 0.50:
+            elif scenario.active("language_shift", day) and mag.feature_share <= r < mag.feature_share + mag.language_share:
                 query = rng.choice(ES_QUERIES)
             else:
                 query = rng.choice(EN_QUERIES[rng.choice(sorted(EN_QUERIES))])
-            if rng.random() < 0.04:
+            if rng.random() < mag.pii_rate:
                 query += rng.choice(PII_SNIPPETS)
 
             pii = guardrails.find_pii(query)
             injection = guardrails.is_injection(query)
-            # Only ~6% of requests are slowed: the mean barely moves, the p95 explodes.
-            slow = scenario.active("provider_latency_spike", day) and rng.random() < 0.06
-            ans = answer(query, model, prompt_version, rng, extra_latency_ms=3000 if slow else 0.0)
+            # By default only ~6% of requests are slowed: the mean barely moves, the p95 explodes.
+            slow = scenario.active("provider_latency_spike", day) and rng.random() < mag.slow_fraction
+            ans = answer(query, model, prompt_version, rng, extra_latency_ms=mag.slow_extra_ms if slow else 0.0)
             language = detect_language(query)
             traces.append(Trace(
                 trace_id=f"d{day:02d}-{n:04d}", day=day, query=guardrails.redact(query), language=language,

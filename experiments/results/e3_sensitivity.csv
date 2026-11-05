@@ -1,0 +1,29 @@
+parameter,value,monitor,detection_rate,ci_low,ci_high,n
+slow_fraction,0.01,p95 monitor,0.0,0.0,0.0714,50
+slow_fraction,0.01,mean monitor,0.0,0.0,0.0714,50
+slow_fraction,0.02,p95 monitor,0.0,0.0,0.0714,50
+slow_fraction,0.02,mean monitor,0.0,0.0,0.0714,50
+slow_fraction,0.03,p95 monitor,0.02,0.0035,0.105,50
+slow_fraction,0.03,mean monitor,0.0,0.0,0.0714,50
+slow_fraction,0.04,p95 monitor,0.2,0.1124,0.3304,50
+slow_fraction,0.04,mean monitor,0.0,0.0,0.0714,50
+slow_fraction,0.06,p95 monitor,0.74,0.6045,0.8413,50
+slow_fraction,0.06,mean monitor,0.02,0.0035,0.105,50
+slow_fraction,0.08,p95 monitor,1.0,0.9286,1.0,50
+slow_fraction,0.08,mean monitor,0.4,0.2761,0.5382,50
+slow_fraction,0.1,p95 monitor,1.0,0.9286,1.0,50
+slow_fraction,0.1,mean monitor,0.92,0.8116,0.9685,50
+slow_fraction,0.15,p95 monitor,1.0,0.9286,1.0,50
+slow_fraction,0.15,mean monitor,1.0,0.9286,1.0,50
+injection_share,0.005,standard,0.0,0.0,0.0714,50
+injection_share,0.01,standard,0.02,0.0035,0.105,50
+injection_share,0.02,standard,0.58,0.4423,0.7063,50
+injection_share,0.03,standard,0.98,0.895,0.9965,50
+injection_share,0.05,standard,1.0,0.9286,1.0,50
+injection_share,0.08,standard,1.0,0.9286,1.0,50
+injection_share,0.12,standard,1.0,0.9286,1.0,50
+feature_share,0.02,standard,0.02,0.0035,0.105,50
+feature_share,0.05,standard,0.42,0.2937,0.5577,50
+feature_share,0.1,standard,0.98,0.895,0.9965,50
+feature_share,0.2,standard,1.0,0.9286,1.0,50
+feature_share,0.3,standard,1.0,0.9286,1.0,50

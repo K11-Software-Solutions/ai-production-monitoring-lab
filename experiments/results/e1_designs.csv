@@ -1,0 +1,251 @@
+design,seed,recall,quiet_alerts,unexplained_alerts
+"standard (p95, z>=3 + min effect)",1000,1.0,0,0
+"standard (p95, z>=3 + min effect)",1001,1.0,0,0
+"standard (p95, z>=3 + min effect)",1002,1.0,0,0
+"standard (p95, z>=3 + min effect)",1003,1.0,0,0
+"standard (p95, z>=3 + min effect)",1004,1.0,0,0
+"standard (p95, z>=3 + min effect)",1005,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1006,1.0,0,0
+"standard (p95, z>=3 + min effect)",1007,1.0,0,0
+"standard (p95, z>=3 + min effect)",1008,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1009,1.0,0,0
+"standard (p95, z>=3 + min effect)",1010,1.0,0,0
+"standard (p95, z>=3 + min effect)",1011,1.0,1,0
+"standard (p95, z>=3 + min effect)",1012,1.0,0,0
+"standard (p95, z>=3 + min effect)",1013,1.0,0,0
+"standard (p95, z>=3 + min effect)",1014,1.0,0,1
+"standard (p95, z>=3 + min effect)",1015,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1016,1.0,0,0
+"standard (p95, z>=3 + min effect)",1017,1.0,0,1
+"standard (p95, z>=3 + min effect)",1018,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1019,1.0,0,0
+"standard (p95, z>=3 + min effect)",1020,1.0,0,0
+"standard (p95, z>=3 + min effect)",1021,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1022,1.0,0,0
+"standard (p95, z>=3 + min effect)",1023,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1024,1.0,0,0
+"standard (p95, z>=3 + min effect)",1025,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1026,1.0,0,0
+"standard (p95, z>=3 + min effect)",1027,1.0,0,0
+"standard (p95, z>=3 + min effect)",1028,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1029,1.0,0,0
+"standard (p95, z>=3 + min effect)",1030,1.0,0,0
+"standard (p95, z>=3 + min effect)",1031,1.0,0,1
+"standard (p95, z>=3 + min effect)",1032,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1033,1.0,0,0
+"standard (p95, z>=3 + min effect)",1034,1.0,1,0
+"standard (p95, z>=3 + min effect)",1035,1.0,0,0
+"standard (p95, z>=3 + min effect)",1036,1.0,0,0
+"standard (p95, z>=3 + min effect)",1037,1.0,0,0
+"standard (p95, z>=3 + min effect)",1038,1.0,0,0
+"standard (p95, z>=3 + min effect)",1039,1.0,0,0
+"standard (p95, z>=3 + min effect)",1040,1.0,0,1
+"standard (p95, z>=3 + min effect)",1041,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1042,1.0,0,0
+"standard (p95, z>=3 + min effect)",1043,0.8333333333333334,1,0
+"standard (p95, z>=3 + min effect)",1044,1.0,0,0
+"standard (p95, z>=3 + min effect)",1045,1.0,0,0
+"standard (p95, z>=3 + min effect)",1046,1.0,1,0
+"standard (p95, z>=3 + min effect)",1047,1.0,0,0
+"standard (p95, z>=3 + min effect)",1048,0.8333333333333334,0,0
+"standard (p95, z>=3 + min effect)",1049,0.8333333333333334,0,0
+mean latency,1000,0.8333333333333334,0,0
+mean latency,1001,0.8333333333333334,0,0
+mean latency,1002,0.8333333333333334,0,0
+mean latency,1003,0.8333333333333334,0,0
+mean latency,1004,0.8333333333333334,0,0
+mean latency,1005,0.8333333333333334,0,0
+mean latency,1006,0.8333333333333334,0,0
+mean latency,1007,0.8333333333333334,0,0
+mean latency,1008,0.8333333333333334,0,0
+mean latency,1009,0.8333333333333334,0,0
+mean latency,1010,0.8333333333333334,0,0
+mean latency,1011,0.8333333333333334,1,0
+mean latency,1012,0.8333333333333334,0,0
+mean latency,1013,0.8333333333333334,0,0
+mean latency,1014,0.8333333333333334,0,1
+mean latency,1015,0.8333333333333334,0,0
+mean latency,1016,0.8333333333333334,0,0
+mean latency,1017,0.8333333333333334,0,1
+mean latency,1018,0.8333333333333334,0,0
+mean latency,1019,0.8333333333333334,0,0
+mean latency,1020,0.8333333333333334,0,0
+mean latency,1021,0.8333333333333334,0,0
+mean latency,1022,0.8333333333333334,0,0
+mean latency,1023,0.8333333333333334,0,0
+mean latency,1024,0.8333333333333334,0,0
+mean latency,1025,0.8333333333333334,0,0
+mean latency,1026,0.8333333333333334,0,0
+mean latency,1027,0.8333333333333334,0,0
+mean latency,1028,0.8333333333333334,0,0
+mean latency,1029,0.8333333333333334,0,0
+mean latency,1030,0.8333333333333334,0,0
+mean latency,1031,0.8333333333333334,0,1
+mean latency,1032,0.8333333333333334,0,0
+mean latency,1033,0.8333333333333334,0,0
+mean latency,1034,0.8333333333333334,1,0
+mean latency,1035,0.8333333333333334,0,0
+mean latency,1036,0.8333333333333334,0,0
+mean latency,1037,0.8333333333333334,0,0
+mean latency,1038,0.8333333333333334,0,0
+mean latency,1039,0.8333333333333334,0,0
+mean latency,1040,0.8333333333333334,0,1
+mean latency,1041,0.8333333333333334,0,0
+mean latency,1042,0.8333333333333334,0,0
+mean latency,1043,0.8333333333333334,1,0
+mean latency,1044,1.0,0,0
+mean latency,1045,0.8333333333333334,0,0
+mean latency,1046,0.8333333333333334,1,0
+mean latency,1047,0.8333333333333334,0,0
+mean latency,1048,0.8333333333333334,0,0
+mean latency,1049,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1000,1.0,0,0
+"significance only (z>=3, no min effect)",1001,1.0,0,0
+"significance only (z>=3, no min effect)",1002,1.0,0,0
+"significance only (z>=3, no min effect)",1003,1.0,0,0
+"significance only (z>=3, no min effect)",1004,1.0,0,0
+"significance only (z>=3, no min effect)",1005,0.8333333333333334,1,0
+"significance only (z>=3, no min effect)",1006,1.0,0,0
+"significance only (z>=3, no min effect)",1007,1.0,0,0
+"significance only (z>=3, no min effect)",1008,0.8333333333333334,1,0
+"significance only (z>=3, no min effect)",1009,1.0,0,0
+"significance only (z>=3, no min effect)",1010,1.0,0,0
+"significance only (z>=3, no min effect)",1011,1.0,1,0
+"significance only (z>=3, no min effect)",1012,1.0,0,0
+"significance only (z>=3, no min effect)",1013,1.0,0,0
+"significance only (z>=3, no min effect)",1014,1.0,0,1
+"significance only (z>=3, no min effect)",1015,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1016,1.0,0,0
+"significance only (z>=3, no min effect)",1017,1.0,0,1
+"significance only (z>=3, no min effect)",1018,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1019,1.0,0,0
+"significance only (z>=3, no min effect)",1020,1.0,0,0
+"significance only (z>=3, no min effect)",1021,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1022,1.0,0,0
+"significance only (z>=3, no min effect)",1023,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1024,1.0,0,0
+"significance only (z>=3, no min effect)",1025,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1026,1.0,0,0
+"significance only (z>=3, no min effect)",1027,1.0,0,0
+"significance only (z>=3, no min effect)",1028,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1029,1.0,0,0
+"significance only (z>=3, no min effect)",1030,1.0,0,0
+"significance only (z>=3, no min effect)",1031,1.0,0,1
+"significance only (z>=3, no min effect)",1032,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1033,1.0,0,0
+"significance only (z>=3, no min effect)",1034,1.0,1,0
+"significance only (z>=3, no min effect)",1035,1.0,0,0
+"significance only (z>=3, no min effect)",1036,1.0,0,0
+"significance only (z>=3, no min effect)",1037,1.0,0,0
+"significance only (z>=3, no min effect)",1038,1.0,0,0
+"significance only (z>=3, no min effect)",1039,1.0,0,0
+"significance only (z>=3, no min effect)",1040,1.0,0,1
+"significance only (z>=3, no min effect)",1041,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1042,1.0,0,0
+"significance only (z>=3, no min effect)",1043,0.8333333333333334,1,0
+"significance only (z>=3, no min effect)",1044,1.0,0,0
+"significance only (z>=3, no min effect)",1045,1.0,2,0
+"significance only (z>=3, no min effect)",1046,1.0,1,0
+"significance only (z>=3, no min effect)",1047,1.0,0,0
+"significance only (z>=3, no min effect)",1048,0.8333333333333334,0,0
+"significance only (z>=3, no min effect)",1049,0.8333333333333334,0,0
+"effect only (min effect, no z-test)",1000,1.0,2,1
+"effect only (min effect, no z-test)",1001,1.0,1,0
+"effect only (min effect, no z-test)",1002,1.0,3,0
+"effect only (min effect, no z-test)",1003,1.0,0,0
+"effect only (min effect, no z-test)",1004,1.0,1,1
+"effect only (min effect, no z-test)",1005,0.8333333333333334,0,0
+"effect only (min effect, no z-test)",1006,1.0,2,0
+"effect only (min effect, no z-test)",1007,1.0,0,1
+"effect only (min effect, no z-test)",1008,0.8333333333333334,6,2
+"effect only (min effect, no z-test)",1009,1.0,0,1
+"effect only (min effect, no z-test)",1010,1.0,0,0
+"effect only (min effect, no z-test)",1011,1.0,3,1
+"effect only (min effect, no z-test)",1012,1.0,1,0
+"effect only (min effect, no z-test)",1013,1.0,2,2
+"effect only (min effect, no z-test)",1014,1.0,3,1
+"effect only (min effect, no z-test)",1015,0.8333333333333334,2,0
+"effect only (min effect, no z-test)",1016,1.0,2,2
+"effect only (min effect, no z-test)",1017,1.0,2,3
+"effect only (min effect, no z-test)",1018,0.8333333333333334,1,0
+"effect only (min effect, no z-test)",1019,1.0,3,0
+"effect only (min effect, no z-test)",1020,1.0,2,0
+"effect only (min effect, no z-test)",1021,0.8333333333333334,1,0
+"effect only (min effect, no z-test)",1022,1.0,0,0
+"effect only (min effect, no z-test)",1023,0.8333333333333334,1,1
+"effect only (min effect, no z-test)",1024,1.0,1,1
+"effect only (min effect, no z-test)",1025,0.8333333333333334,2,0
+"effect only (min effect, no z-test)",1026,1.0,0,1
+"effect only (min effect, no z-test)",1027,1.0,0,1
+"effect only (min effect, no z-test)",1028,0.8333333333333334,2,2
+"effect only (min effect, no z-test)",1029,1.0,3,1
+"effect only (min effect, no z-test)",1030,1.0,0,1
+"effect only (min effect, no z-test)",1031,1.0,0,2
+"effect only (min effect, no z-test)",1032,0.8333333333333334,5,2
+"effect only (min effect, no z-test)",1033,1.0,1,0
+"effect only (min effect, no z-test)",1034,1.0,5,0
+"effect only (min effect, no z-test)",1035,1.0,0,0
+"effect only (min effect, no z-test)",1036,1.0,0,1
+"effect only (min effect, no z-test)",1037,1.0,4,0
+"effect only (min effect, no z-test)",1038,1.0,1,2
+"effect only (min effect, no z-test)",1039,1.0,0,0
+"effect only (min effect, no z-test)",1040,1.0,1,1
+"effect only (min effect, no z-test)",1041,0.8333333333333334,0,0
+"effect only (min effect, no z-test)",1042,1.0,2,0
+"effect only (min effect, no z-test)",1043,0.8333333333333334,3,0
+"effect only (min effect, no z-test)",1044,1.0,2,0
+"effect only (min effect, no z-test)",1045,1.0,0,2
+"effect only (min effect, no z-test)",1046,1.0,1,0
+"effect only (min effect, no z-test)",1047,1.0,3,0
+"effect only (min effect, no z-test)",1048,0.8333333333333334,3,2
+"effect only (min effect, no z-test)",1049,0.8333333333333334,2,1
+no statistics (any increase),1000,1.0,47,27
+no statistics (any increase),1001,1.0,51,27
+no statistics (any increase),1002,1.0,43,24
+no statistics (any increase),1003,1.0,36,16
+no statistics (any increase),1004,1.0,40,21
+no statistics (any increase),1005,0.8333333333333334,46,23
+no statistics (any increase),1006,1.0,46,20
+no statistics (any increase),1007,1.0,48,21
+no statistics (any increase),1008,0.8333333333333334,60,26
+no statistics (any increase),1009,1.0,38,21
+no statistics (any increase),1010,1.0,32,23
+no statistics (any increase),1011,1.0,48,25
+no statistics (any increase),1012,1.0,35,28
+no statistics (any increase),1013,1.0,42,21
+no statistics (any increase),1014,1.0,52,27
+no statistics (any increase),1015,0.8333333333333334,41,23
+no statistics (any increase),1016,1.0,54,27
+no statistics (any increase),1017,1.0,51,24
+no statistics (any increase),1018,0.8333333333333334,46,20
+no statistics (any increase),1019,1.0,51,18
+no statistics (any increase),1020,1.0,44,22
+no statistics (any increase),1021,0.8333333333333334,51,22
+no statistics (any increase),1022,1.0,51,25
+no statistics (any increase),1023,0.8333333333333334,34,20
+no statistics (any increase),1024,1.0,48,22
+no statistics (any increase),1025,0.8333333333333334,43,24
+no statistics (any increase),1026,1.0,42,19
+no statistics (any increase),1027,1.0,43,23
+no statistics (any increase),1028,0.8333333333333334,48,25
+no statistics (any increase),1029,1.0,47,20
+no statistics (any increase),1030,1.0,38,23
+no statistics (any increase),1031,1.0,47,28
+no statistics (any increase),1032,0.8333333333333334,52,25
+no statistics (any increase),1033,1.0,48,17
+no statistics (any increase),1034,1.0,51,24
+no statistics (any increase),1035,1.0,53,21
+no statistics (any increase),1036,1.0,40,17
+no statistics (any increase),1037,1.0,44,24
+no statistics (any increase),1038,1.0,51,22
+no statistics (any increase),1039,1.0,45,20
+no statistics (any increase),1040,1.0,36,25
+no statistics (any increase),1041,0.8333333333333334,40,28
+no statistics (any increase),1042,1.0,48,21
+no statistics (any increase),1043,0.8333333333333334,57,19
+no statistics (any increase),1044,1.0,41,22
+no statistics (any increase),1045,1.0,54,25
+no statistics (any increase),1046,1.0,35,22
+no statistics (any increase),1047,1.0,58,23
+no statistics (any increase),1048,0.8333333333333334,53,25
+no statistics (any increase),1049,0.8333333333333334,45,19

@@ -96,6 +96,23 @@ articles/          the eight articles
 - **Global changes confound triage.** The new model version "explained" every alert until it was separated out.
 - **Overlap-based evaluators miss changed numbers.** A refund window of 60 days instead of 30 passes the groundedness check.
 
+## Experiments (multi-seed)
+
+The CI gate checks one published scenario. The paper's experiments ([`experiments/`](experiments)) rerun everything across **50 seeds** and sweep incident sizes and alert thresholds:
+
+```bash
+python -m experiments.run_experiments            # ~15 min; writes experiments/results/summary.md and CSVs
+pip install -r requirements-experiments.txt
+python -m experiments.plot_figures               # figures in experiments/results/figures/
+```
+
+The multi-seed results qualify some single-seed claims, and they are reported as such (see [`experiments/results/summary.md`](experiments/results/summary.md)):
+
+- The default latency incident (6% of requests slowed) sits near the detection boundary: the p95 rule catches it on onset day in about 74% of seeds, the mean rule in about 2%.
+- The standard monitors raise at least one false alarm in a few of the 50 quiet runs, not zero in every run.
+- On *subtle* incidents the default minimum-effect floor costs recall; a stricter z-threshold without the floor does better at no extra false alarms.
+- At an equal evaluation budget, random sampling detects the silent model update at least as well as risk-based sampling, which spends budget on already-flagged traffic.
+
 ## Related K11 tools
 
 This lab watches **real traffic after release**. Two K11 tools test with **synthetic inputs before and alongside release**, and together they cover most of an AI system's lifecycle:

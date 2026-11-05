@@ -1,0 +1,3 @@
+# Only needed to re-render the paper figures (python -m experiments.plot_figures).
+-r requirements-dev.txt
+matplotlib==3.10.7
