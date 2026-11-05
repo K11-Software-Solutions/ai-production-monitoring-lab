@@ -37,29 +37,35 @@ def read(name: str) -> list[dict]:
 
 
 def fig_architecture() -> None:
-    fig, ax = plt.subplots(figsize=(7.0, 2.2))
+    """Column-width layout: pipeline in two rows, monitoring evaluation below."""
+    fig, ax = plt.subplots(figsize=(3.4, 2.7))
     ax.set_axis_off()
-    boxes = [("Simulator\n(scheduled incidents,\nhidden ground truth)", 0.0),
-             ("Traces\n(PII redacted)", 1.45), ("Online evals\n(risk-based sample)", 2.75),
-             ("Monitors\nratio · z-test · PSI", 4.05), ("Alerts", 5.35)]
-    for label, x in boxes:
-        ax.add_patch(FancyBboxPatch((x, 0.55), 1.15, 0.8, boxstyle="round,pad=0.02,rounding_size=0.06",
-                                    fc="#eef4fc", ec=BLUE, lw=1))
-        ax.text(x + 0.575, 0.95, label, ha="center", va="center", fontsize=7.5, color=INK)
-    for i in range(len(boxes) - 1):
-        x0 = boxes[i][1] + 1.15
-        ax.annotate("", xy=(boxes[i + 1][1], 0.95), xytext=(x0, 0.95), arrowprops=dict(arrowstyle="->", color=MUTED, lw=1))
-    ax.add_patch(FancyBboxPatch((4.05, -0.45), 2.45, 0.65, boxstyle="round,pad=0.02,rounding_size=0.06",
-                                fc="#fdf0ea", ec=ORANGE, lw=1))
-    ax.text(5.275, -0.12, "Monitoring evaluation: recall, delay,\nfalse alarms, negative controls", ha="center",
-            va="center", fontsize=7.5, color=INK)
-    ax.annotate("", xy=(5.9, 0.2), xytext=(5.9, 0.55), arrowprops=dict(arrowstyle="->", color=MUTED, lw=1))
-    ax.plot([0.575, 0.575], [0.55, -0.12], color=MUTED, lw=1, ls="--")
-    ax.annotate("", xy=(4.05, -0.12), xytext=(0.575, -0.12),
-                arrowprops=dict(arrowstyle="->", color=MUTED, lw=1, linestyle="--"))
-    ax.text(2.3, -0.02, "hidden ground truth (never read by monitors)", ha="center", va="bottom", fontsize=7, color=MUTED)
-    ax.set_xlim(-0.1, 6.6)
-    ax.set_ylim(-0.6, 1.45)
+
+    def box(x, y, w, h, label, fc="#eef4fc", ec=BLUE):
+        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.02,rounding_size=0.05", fc=fc, ec=ec, lw=1))
+        ax.text(x + w / 2, y + h / 2, label, ha="center", va="center", fontsize=7, color=INK)
+
+    def arrow(x0, y0, x1, y1, dashed=False):
+        ax.annotate("", xy=(x1, y1), xytext=(x0, y0),
+                    arrowprops=dict(arrowstyle="->", color=MUTED, lw=1, linestyle="--" if dashed else "-"))
+
+    w, h = 1.0, 0.62
+    box(0.0, 2.2, w, h, "Simulator\n(scheduled\nincidents)")
+    box(1.3, 2.2, w, h, "Traces\n(PII redacted)")
+    box(2.6, 2.2, w, h, "Online evals\n(risk-based\nsample)")
+    box(2.6, 1.15, w, h, "Monitors\nratio · z-test\n· PSI")
+    box(1.3, 1.15, w, h, "Alerts")
+    box(0.0, 0.0, 3.6, 0.6, "Monitoring evaluation: recall, delay,\nfalse alarms, negative controls", fc="#fdf0ea", ec=ORANGE)
+    arrow(1.0, 2.51, 1.3, 2.51)
+    arrow(2.3, 2.51, 2.6, 2.51)
+    arrow(3.1, 2.2, 3.1, 1.77)
+    arrow(2.6, 1.46, 2.3, 1.46)
+    arrow(1.8, 1.15, 1.8, 0.6)
+    ax.plot([0.5, 0.5], [2.2, 0.6], color=MUTED, lw=1, ls="--")
+    ax.annotate("", xy=(0.5, 0.6), xytext=(0.5, 0.75), arrowprops=dict(arrowstyle="->", color=MUTED, lw=1))
+    ax.text(0.58, 1.75, "hidden ground truth\n(never read\nby monitors)", fontsize=6, color=MUTED, va="center", ha="left")
+    ax.set_xlim(-0.05, 3.65)
+    ax.set_ylim(-0.05, 2.87)
     fig.savefig(FIGS / "fig1_architecture.png")
     plt.close(fig)
 
