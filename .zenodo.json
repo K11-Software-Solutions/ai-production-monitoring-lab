@@ -1,0 +1,24 @@
+{
+  "title": "AI Production Monitoring Lab",
+  "description": "Monitor an AI assistant in production and test the monitoring itself: tracing, online evals, drift (PSI), p95 latency, guardrails, shadow releases, incident triage and feedback loops, with CI gates and negative controls. No API key needed.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Jadhav, Kavita",
+      "affiliation": "K11 Software Solutions"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ai-monitoring",
+    "ai-quality-engineering",
+    "drift-detection",
+    "guardrails",
+    "llm-evaluation",
+    "llmops",
+    "observability",
+    "online-evaluation",
+    "shadow-testing"
+  ],
+  "notes": "Code is licensed under MIT; the written material (articles/) is licensed under CC BY 4.0. All products, users and data in the examples are fictional or simulated."
+}
