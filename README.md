@@ -7,7 +7,7 @@
 
 **Monitor an AI assistant in production, and test the monitoring itself.** Tracing, online evals without reference answers, drift detection, runtime guardrails, shadow releases, incident triage and the feedback loop into regression tests, all gated in CI.
 
-The fourth lab in a series for quality engineers moving into AI:
+The fourth of five labs in a series for quality engineers moving into AI:
 
 | Lab | Question it answers |
 |---|---|
@@ -15,6 +15,7 @@ The fourth lab in a series for quality engineers moving into AI:
 | [LLM Model Testing Lab](https://github.com/K11-Software-Solutions/llm-model-testing-lab) | Is the **model** good enough? |
 | [Agent Testing Lab](https://github.com/K11-Software-Solutions/agent-testing-lab) | Is the **agent** safe to let act? |
 | **AI Production Monitoring Lab** (this repo) | Is it **still** good, for the users we actually have, right now? |
+| [Multi-Agent Testing Lab](https://github.com/K11-Software-Solutions/multi-agent-testing-lab) | When **agents work together**, does the team do the right thing, and who broke it when it doesn't? |
 
 ## How it works
 
